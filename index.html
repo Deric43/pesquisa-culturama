@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
 
     <title>pesquisa Culturama</title>
 </head>
@@ -15,8 +14,8 @@
     </header>
     <section>
         <form action="" method="get">
-            <fieldset>
-                <!--Dados pessoais-->
+            <!--<fieldset>
+                <!--Dados pessoais--
                 <legend>Dados pessoais</legend>
                 <label for="userName">Nome</label>
                 <input type="text" name="userName" required>
@@ -36,7 +35,23 @@
                 <label for="userImage">Upload de foto</label>
                 <input type="file" accept="image/*" name="userImage" required>
                 <br>
+            </fieldset>-->
+
+            <fieldset>
+                <legend>Perfil</legend>
+
+                <p>Genero:</p>
+                <input type="radio" name="userGender" value="Feminino">
+                <label for="userGender">Feminino</label>
+
+                <input type="radio" name="userGender" value="Masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender" value="notInformed">
+                <label for="userGender">Prefiro não informar</label>
+
             </fieldset>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
